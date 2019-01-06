@@ -24,13 +24,15 @@ export function genReduxActionGroupFiles(
 ) {
   const groups = groupOperationsByGroupName(operations);
   const files = [];
+
+  // tslint:disable-next-line:forin prefer-const
   for (let name in groups) {
     const group = groups[name];
     const lines = [];
     lines.push(renderHeader(name, spec, options));
     lines.push(renderOperationGroup(group, renderReduxActionBlock, spec, options));
     files.push({
-      path: `${options.outDir}/action/${name}.ts`,
+      path: `${options.out}/action/${name}.ts`,
       contents: lines.join('\n'),
     });
   }

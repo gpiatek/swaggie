@@ -60,7 +60,7 @@ export function getBestResponse(op: ApiOperation): ApiOperationResponse {
 }
 
 export function removeOldFiles(options: ClientOptions) {
-  cleanDirs(options.outDir, options);
+  cleanDirs(options.out, options);
 }
 
 const TS_EXTENSION = 'ts';

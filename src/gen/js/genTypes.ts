@@ -13,7 +13,7 @@ export function genTypesFile(spec: ApiSpec, options: ClientOptions) {
   join(lines, renderDefinitions(spec, options));
 
   return {
-    path: `${options.outDir}/types.ts`,
+    path: `${options.out}/types.ts`,
     contents: lines.join('\n'),
   };
 }

@@ -35,14 +35,14 @@ export function genOperationGroupFiles(
       if (err) {
         console.error(err);
       }
-      const path = `${options.outDir}/${name}.ts`;
+      const path = `${options.out}/${name}.ts`;
       const contents = str;
 
       saveAndPrettifyFile(path, contents);
     });
   }
 
-  createBarrelFile(groups, `${options.outDir}/index.ts`);
+  createBarrelFile(groups, `${options.out}/index.ts`);
 }
 
 function createBarrelFile(clients: any[], path: string) {

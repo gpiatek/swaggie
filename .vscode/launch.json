@@ -11,13 +11,10 @@
       "program": "${workspaceFolder}\\src\\cli.ts",
       "preLaunchTask": "Build",
       "outFiles": ["${workspaceFolder}/dist/**/*.js"],
-      "cwd": "${workspaceFolder}",
       "protocol": "inspector",
       "args": [
-        "-s",
-        "https://petstore.swagger.io/v2/swagger.json",
-        "-o",
-        "C:\\bc\\test\\openapi-tests"
+        "-c",
+        "./sample-config.json"
       ]
     }
   ]

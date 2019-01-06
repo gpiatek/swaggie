@@ -1,0 +1,9 @@
+[
+  {
+    "out": "C:\\bc\\test\\openapi-tests",
+    "src": "https://petstore.swagger.io/v2/swagger.json",
+    "template": "axios",
+    "redux": false,
+    "semicolon": true
+  }
+]

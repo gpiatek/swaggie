@@ -1,8 +1,13 @@
 interface ClientOptions {
   src: string;
-  outDir: string;
+  out: string;
+  template: string;
   redux?: boolean;
   semicolon?: boolean;
+}
+
+interface FullAppOptions extends ClientOptions {
+  config: string;
 }
 
 interface ApiRequestData {
